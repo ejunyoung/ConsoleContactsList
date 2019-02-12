@@ -31,7 +31,7 @@ public class ContactsListItemHelper {
 		EntityManager em = emfactory.createEntityManager();
 		em.getTransaction().begin();
 		TypedQuery<ContactsListItem> typedQuery = em.createQuery(
-				"select li from ContactsListItem li where li.store = :selectedName and li.item = :selectedEmail",
+				"select li from ContactsListItem li where li.name = :selectedName and li.email = :selectedEmail",
 				ContactsListItem.class);
 
 		typedQuery.setParameter("selectedName", toDelete.getName());
@@ -71,7 +71,7 @@ public class ContactsListItemHelper {
 		EntityManager em = emfactory.createEntityManager();
 		em.getTransaction().begin();
 		TypedQuery<ContactsListItem> typedQuery = em.createQuery(
-				"select li from ContactsListItem li where li.store = :selectedName", ContactsListItem.class);
+				"select li from ContactsListItem li where li.name = :selectedName", ContactsListItem.class);
 		typedQuery.setParameter("selectedName", ContactName);
 
 		List<ContactsListItem> foundItems = typedQuery.getResultList();
@@ -84,7 +84,7 @@ public class ContactsListItemHelper {
 		EntityManager em = emfactory.createEntityManager();
 		em.getTransaction().begin();
 		TypedQuery<ContactsListItem> typedQuery = em.createQuery(
-				"select li from ContactsListItem li where li.item = :selectedEmail", ContactsListItem.class);
+				"select li from ContactsListItem li where li.email = :selectedEmail", ContactsListItem.class);
 		typedQuery.setParameter("selectedItem", emailAddress);
 
 		List<ContactsListItem> foundItems = typedQuery.getResultList();

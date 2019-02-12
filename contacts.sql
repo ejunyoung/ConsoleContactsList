@@ -27,7 +27,7 @@ CREATE TABLE `items` (
   `NAME` varchar(20) NOT NULL,
   `EMAIL` varchar(35) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -36,7 +36,7 @@ CREATE TABLE `items` (
 
 LOCK TABLES `items` WRITE;
 /*!40000 ALTER TABLE `items` DISABLE KEYS */;
-INSERT INTO `items` VALUES (1,'Kim','kim@dmacc.edu'),(2,'Lee','lee@dmacc.edu'),(3,'Park','park@dmacc.edu'),(4,'Wang','wang@dmacc.edu');
+INSERT INTO `items` VALUES (1,'lee','lee@dmacc.edu'),(3,'Park','park@dmacc.edu'),(4,'Wang','wang@dmacc.edu'),(6,'cho','cho@dmacc..edu');
 /*!40000 ALTER TABLE `items` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -49,4 +49,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-01-30 22:17:48
+-- Dump completed on 2019-02-11  4:00:22
